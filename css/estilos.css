@@ -1,0 +1,197 @@
+body {
+    background-image: url("../img/background.png");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: auto;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: transparent !important;
+    position: relative;
+    float: right;
+    margin-right: 5%;
+}
+
+.navbar ul li {
+    padding: 15px 20px;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    color: #2e3b5d;
+    text-decoration: none;
+}
+
+.f-section {
+    float: left;
+    width: 100%;
+}
+
+.computador {
+    width: 60%;
+    padding: 10% 5%;
+    float: right;
+    margin-right: -60%;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+}
+
+.boton {
+    color: #2e3b5d;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 60%;
+    height: auto;
+    border-radius: 800px;
+    float: left;
+    margin: 80px 20px 10px 30%;
+
+}
+
+.boton:hover {
+    background-color: #2e3b5d;
+    color: #fff;
+    border:0;
+}
+
+
+.logo2 {
+    width: 30%;
+    float: left;
+    margin: -80px 0px 33px 35%;
+}
+
+.parrafosomos {
+    color: #606060;
+    font-size: 20px;
+    font-family: roboto;
+    text-align: center;
+    float: left;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.titulobeneficios {
+    color: #003260;
+    font-size: 50px;
+    float: left;
+    font-family: roboto;
+    font-weight: 500;
+    margin: 20% 0 0 -2%;
+
+}
+
+.iconologo {
+    width: 8%;
+    float: left;
+    margin: 0 0 0 25%;
+}
+
+.lista-beneficios {
+    float: right;
+    width: 50%;
+    margin-top: -15%;
+}
+
+.lista-beneficios .futon {
+    float: left;
+    margin-bottom: 7%;
+    margin-top: 3%;
+    width: 100%;
+    padding-right: 20%;
+}
+
+.lista-beneficios .futon p {
+    margin-left: 0%;
+    font-family: roboto;
+    font-size: 16px:;
+}
+
+.lista-beneficios .futon img {
+    width: 10%;
+    float: left;
+    margin: 0 25px 0% 0;
+}
+
+.contenedor {
+    width: 100%;
+    float: left;
+
+}
+
+.titulo-como-funciona {
+    width: 100%;
+    color: #003260;
+    font-size: 50px;
+    font-family: roboto;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 5%;
+}
+
+.imagen-como-funciona img {
+    width: 100%;
+}
+
+.descarga {
+    float: left;
+    background-color: #003260 !important;
+    font-size: 20px;
+    font-weight: 500;
+    width: 35%;
+    height: auto;
+    border-radius: 200px;
+    margin: 5% 0% 10px 30%;
+}
+
+.descarga:hover {
+    background-color: #187bc6 !important;
+}
+
+.footer {
+    background-image: url("../img/footerback-07-08.svg");
+    background-size: cover;
+    width: 100%;
+    float: left;
+    height: 150px;
+    margin-top: 6%;
+}
+
+.footer img {
+    width: 3%;
+    height: auto;
+    text-align: center;
+    margin: 2% 0 0 48.5%;
+}
+
+.footer p {
+    color: white;
+    font-family: roboto;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 1%
+}
+
+.footer p:hover {
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
+#menu-arriba:hover {
+    cursor: pointer;
+}
