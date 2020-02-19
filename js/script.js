@@ -13,3 +13,7 @@ $(".computador").animate({"margin-right": 0}, 1000)
 $("#descarga").click(()=> {
 window.open("manual.pdf","_blank")
 });
+
+$("#boton-sup-login").click(function(event) {
+	window.location="login.html"
+});

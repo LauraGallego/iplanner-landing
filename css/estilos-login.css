@@ -35,6 +35,9 @@ body {
     margin-top: 0%;
 }
 
+.background-izquierdo .manual-usuario:hover{
+    cursor: pointer;
+}
 .background-izquierdo .manual-usuario img {
     float: left;
     width: 5%;
@@ -50,7 +53,9 @@ body {
     margin: 20% 0 0 4%;
 }
 
-
+.background-izquierdo .logo-direccion:hover{
+    cursor: pointer;
+}
 
 .texto-login{
 	float: left;
@@ -111,3 +116,8 @@ body {
 	margin-left: 20%;
 }
 
+.alerta{
+    margin-left: 20.83%;
+    text-align: center;
+    display: none;
+}
