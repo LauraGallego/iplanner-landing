@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    /*overflow: hidden;*/
+    overflow-x: hidden;
+}
+
+.background-izquierdo {
+    background-image: url("../img/background-35.jpg");
+    float: left;
+    background-attachment: scroll;
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+}
+
+
+.background-izquierdo img {
+    width: 50%;
+    height: auto;
+    margin: 40% 0 0 25%;
+    float: left;
+}
+
+.background-izquierdo .manual-usuario {
+    float: left;
+    width: 100%;
+    margin-top: 0%;
+}
+
+.background-izquierdo .manual-usuario img {
+    float: left;
+    width: 5%;
+    margin: 20% 0 0 32%;
+}
+
+.background-izquierdo .manual-usuario p {
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+    float: left;
+    margin: 20% 0 0 4%;
+}
+
+
+
+.texto-login{
+	float: left;
+	width: 50%;
+    margin-top: 6%;
+    
+	
+
+}
+
+.texto-login .titulo-login h1{
+	text-align: center;
+	margin-top: 60px;
+	font-family: Roboto;
+	font-size: 50px;
+	color: #487ef1;
+	font-weight: 600;
+}
+
+
+.login-acceso{
+	margin-top: 15%;
+	margin-left: 20.83%;
+	width: 100%;
+}
+
+.login-complete{
+	border: none;
+	background-color: #f0f0f0;
+	border-left: 8px solid #487ef1;
+
+
+
+}
+
+.login-complete::placeholder {
+	font-size: 18px;
+	color:#cfcfcf;
+
+}
+
+.login-complete:focus{
+	border: 1px solid #487ef1;
+	border-left: 8px solid #487ef1;
+	outline:none;
+	box-shadow:none;
+
+
+}
+
+
+.boton-inicio button{
+	border-radius: 800px;
+	margin-top: 10%;
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 20px;
+	margin-left: 20%;
+}
+
