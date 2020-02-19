@@ -35,9 +35,10 @@ body {
     margin-top: 0%;
 }
 
-.background-izquierdo .manual-usuario:hover{
+.background-izquierdo .manual-usuario:hover {
     cursor: pointer;
 }
+
 .background-izquierdo .manual-usuario img {
     float: left;
     width: 5%;
@@ -53,71 +54,88 @@ body {
     margin: 20% 0 0 4%;
 }
 
-.background-izquierdo .logo-direccion:hover{
+.background-izquierdo .logo-direccion:hover {
     cursor: pointer;
 }
 
-.texto-login{
-	float: left;
-	width: 50%;
+.texto-login {
+    float: left;
+    width: 50%;
     margin-top: 6%;
-    
-	
+
+
 
 }
 
-.texto-login .titulo-login h1{
-	text-align: center;
-	margin-top: 60px;
-	font-family: Roboto;
-	font-size: 50px;
-	color: #487ef1;
-	font-weight: 600;
+.texto-login .titulo-login h1 {
+    text-align: center;
+    margin-top: 60px;
+    font-family: Roboto;
+    font-size: 50px;
+    color: #487ef1;
+    font-weight: 600;
 }
 
 
-.login-acceso{
-	margin-top: 15%;
-	margin-left: 20.83%;
-	width: 100%;
+.login-acceso {
+    margin-top: 15%;
+    margin-left: 20.83%;
+    width: 100%;
 }
 
-.login-complete{
-	border: none;
-	background-color: #f0f0f0;
-	border-left: 8px solid #487ef1;
+.login-complete {
+    border: none;
+    background-color: #f0f0f0;
+    border-left: 8px solid #487ef1;
 
 
 
 }
 
 .login-complete::placeholder {
-	font-size: 18px;
-	color:#cfcfcf;
+    font-size: 18px;
+    color: #cfcfcf;
 
 }
 
-.login-complete:focus{
-	border: 1px solid #487ef1;
-	border-left: 8px solid #487ef1;
-	outline:none;
-	box-shadow:none;
+.login-complete:focus {
+    border: 1px solid #487ef1;
+    border-left: 8px solid #487ef1;
+    outline: none;
+    box-shadow: none;
 
 
 }
 
 
-.boton-inicio button{
-	border-radius: 800px;
-	margin-top: 10%;
-	font-family: Roboto;
-	font-weight: 500;
-	font-size: 20px;
-	margin-left: 20%;
+.boton-inicio button {
+    border-radius: 800px;
+    margin-top: 10%;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 20%;
 }
 
-.alerta{
+.alerta {
     margin-left: 20.83%;
     text-align: center;
     display: none;
+}
+
+.cover {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.cover img{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 25%;
+    z-index: 9;
 }

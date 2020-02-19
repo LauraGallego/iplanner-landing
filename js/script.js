@@ -17,3 +17,7 @@ window.open("manual.pdf","_blank")
 $("#boton-sup-login").click(function(event) {
 	window.location="login.html"
 });
+
+window.onload=function(){
+	$(".cover").fadeOut(800)
+}

@@ -16,3 +16,7 @@ $(".manual-usuario").click(function(event) {
 $(".logo-direccion").click(function(event) {
 	window.location="index.html"
 });
+
+window.onload=function(){
+	$(".cover").fadeOut(800)
+}
