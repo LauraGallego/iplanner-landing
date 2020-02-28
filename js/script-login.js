@@ -9,10 +9,8 @@ $("#boton-iniciar").click(function(event) {
     if (verifyInputs()) return;
 
     var bf = new Blowfish("F%0uR1&_3rING$");
-
     $.post(route + '/access/login', { user: $("#user").val(), password: bf.base64Encode(bf.encrypt($("#password").val())), },
         (response) => {
-            console.log(response)
             /*
             
              * Codigo 200:     [Success]         Autenticacion realizada con exito
@@ -24,8 +22,13 @@ $("#boton-iniciar").click(function(event) {
             */
             switch (response.status) {
                 case 200:
-                    alert("Usuario autenticado correctamente")
-                    location.replace("http://localhost:4200/indicators/campaign")
+                    // let url="http://leoextranet.leonisa.com/Aplicativos_Informaticos/SecurityService33/api/account/active-directory-https://leoextranet.leonisa.com/Aplicativos_Informaticos/SecurityService33/api/account/active-directory-user/OBeltran?api_key="+response.token
+                    // console.log("request a "+url)
+                    // $.get(url, function(data) {
+                    //     console.log("->"+data)
+                    // });
+                    // // location.replace("http://localhost:4200/indicators/campaign")
+                    console.log("Usuario autenticado: "+$("#user").val()+"\nNombre completo: "+response.name+"\nCargo: "+response.position)
                     break;
                 case 401:
                     showAlert("Usuario o contraseña <b>incorrectos</b>")
