@@ -4,7 +4,7 @@
         - La encriptacion del lado del cliente 
         - El manejo de respuestas enviadas por el servidor de IPlanner
 */
-const route = "http://localhost:9806"
+const route = "http://localhost:2003"
 $("#boton-iniciar").click(function(event) {
     if (verifyInputs()) return;
 
@@ -22,13 +22,10 @@ $("#boton-iniciar").click(function(event) {
             */
             switch (response.status) {
                 case 200:
-                    // let url="http://leoextranet.leonisa.com/Aplicativos_Informaticos/SecurityService33/api/account/active-directory-https://leoextranet.leonisa.com/Aplicativos_Informaticos/SecurityService33/api/account/active-directory-user/OBeltran?api_key="+response.token
-                    // console.log("request a "+url)
-                    // $.get(url, function(data) {
-                    //     console.log("->"+data)
-                    // });
-                    // // location.replace("http://localhost:4200/indicators/campaign")
-                    console.log("Usuario autenticado: "+$("#user").val()+"\nNombre completo: "+response.name+"\nCargo: "+response.position)
+                    let user=bf.base64Encode(bf.encrypt(response.name))
+                    let position= bf.base64Encode(bf.encrypt(response.position))
+                    location.replace(encodeURI("http://localhost:4200/indicators/campaign?usr="+user+"&lbty="+position))
+                      
                     break;
                 case 401:
                     showAlert("Usuario o contraseña <b>incorrectos</b>")
